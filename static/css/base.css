@@ -1,0 +1,139 @@
+/* Steam/Epic Games Inspired Palette */
+
+:root {
+    --primary-color: #23272A; /* Dark Grey */
+    --secondary-color: #2C2F33; /* Slightly Lighter Grey */
+    --background-color: #121212; /* Deep Black Background */
+    --text-color: #FFFFFF; /* Pure White Text */
+    --muted-text-color: #99AAB5; /* Muted Grey-Blue */
+    --highlight-color: #7289DA; /* Discord Blue for Highlights */
+    --danger-color: #FF5555; /* Vibrant Red for Alerts */
+    --success-color: #43B581; /* Bright Green for Success */
+    --post-text-color: #E8E8E8; /* Light Grey for Posts */
+    --subtitle-color: #C0C5CE; /* Soft Light Grey for Subtitles */
+}
+
+/* General Body Styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+.navbar-brand {
+    color: var(--text-color) !important;
+    font-weight: bold;
+}
+.nav-link {
+    color: var(--text-color) !important;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--highlight-color) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--highlight-color);
+    border-color: var(--highlight-color);
+    color: var(--text-color);
+}
+.btn-primary:hover {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    color: var(--background-color);
+}
+.btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+    color: var(--text-color);
+}
+
+/* Container */
+.container {
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
+/* Subtitles */
+h2, h3, h4 {
+    color: var(--subtitle-color);
+}
+
+/* Links */
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: var(--success-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Custom Alerts */
+.alert-success {
+    background-color: var(--success-color);
+    color: var(--text-color);
+}
+.alert-danger {
+    background-color: var(--danger-color);
+    color: var(--text-color);
+}
+
+/* Additional Customizations */
+.card {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--muted-text-color);
+    color: var(--text-color);
+}
+.card-header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.card-body {
+    background-color: var(--background-color);
+    color: var(--post-text-color);
+}
+
+.text-body-secondary {
+    --bs-text-opacity: 1;
+    color: rgb(117, 108, 108)!important;
+}
+
+.profilePic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00000000;
+}
+
+.img-fix{
+    display: flex;
+}
+
+.img-container{
+    margin-right: 20px;
+    margin-top: 10px;
+}
